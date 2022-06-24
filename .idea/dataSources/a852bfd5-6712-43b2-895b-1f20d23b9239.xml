@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bookMgr@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.31">
+    <root id="1">
+      <Grants>2|||2|connect|G
+3|||2|connect|G
+4|||2|connect|G
+5|||2|connect|G
+0|root||265|alter any availability group|G
+0|root||267|alter any event session|G
+0|root||102|authenticate server|G
+0|root||103|authenticate server|G
+0|root||267|connect any database|G
+0|root||1|connect sql|G
+0|root||257|connect sql|G
+0|root||259|connect sql|G
+0|root||260|connect sql|G
+0|root||261|connect sql|G
+0|root||262|connect sql|G
+0|root||263|connect sql|G
+0|root||264|connect sql|G
+0|root||265|connect sql|G
+0|root||266|connect sql|G
+0|root||267|connect sql|G
+0|root||268|connect sql|G
+0|root||269|connect sql|G
+0|root||105|control server|G
+0|root||2|view any database|G
+0|root||101|view any definition|G
+0|root||102|view any definition|G
+0|root||105|view any definition|G
+0|root||106|view any definition|G
+0|root||257|view any definition|G
+0|root||267|view any definition|G
+0|root||102|view server state|G
+0|root||257|view server state|G
+0|root||265|view server state|G
+0|root||267|view server state|G</Grants>
+      <PermissionsCheckSum>47332826841</PermissionsCheckSum>
+      <ServerVersion>13.0.4001</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="bookMgr">
+      <Collation>Chinese_PRC_CI_AS</Collation>
+      <Current>1</Current>
+      <Fingerprint>7.44676/F3DDCA29-84D1-47CF-8417-98812450DC63@LAPTOP-5MFTJ0Q0</Fingerprint>
+      <Grants>7|database||1|connect|G
+7|database||0|view any column encryption key definition|G
+7|database||0|view any column master key definition|G</Grants>
+      <ObjectId>7</ObjectId>
+      <PermissionsCheckSum>3196235284</PermissionsCheckSum>
+    </database>
+    <database id="3" parent="1" name="master">
+      <Collation>Chinese_PRC_CI_AS</Collation>
+      <ObjectId>1</ObjectId>
+    </database>
+    <database id="4" parent="1" name="tempdb">
+      <Collation>Chinese_PRC_CI_AS</Collation>
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="5" parent="1" name="model">
+      <Collation>Chinese_PRC_CI_AS</Collation>
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <Collation>Chinese_PRC_CI_AS</Collation>
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="7" parent="1" name="ReportServer">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="8" parent="1" name="ReportServerTempDB">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="9" parent="1" name="StuCourse">
+      <ObjectId>8</ObjectId>
+    </database>
+    <linked-server id="10" parent="1" name="LAPTOP-5MFTJ0Q0">
+      <DataSource>LAPTOP-5MFTJ0Q0</DataSource>
+      <Product>SQL Server</Product>
+      <ProviderName>SQLNCLI</ProviderName>
+    </linked-server>
+    <login id="11" parent="1" name="sa">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>1</ObjectId>
+    </login>
+    <login id="12" parent="1" name="public">
+      <Enabled>1</Enabled>
+      <ObjectId>2</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="13" parent="1" name="sysadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>3</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="14" parent="1" name="securityadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>4</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="15" parent="1" name="serveradmin">
+      <Enabled>1</Enabled>
+      <ObjectId>5</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="16" parent="1" name="setupadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>6</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="17" parent="1" name="processadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>7</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="18" parent="1" name="diskadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>8</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="19" parent="1" name="dbcreator">
+      <Enabled>1</Enabled>
+      <ObjectId>9</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="20" parent="1" name="bulkadmin">
+      <Enabled>1</Enabled>
+      <ObjectId>10</ObjectId>
+      <Type>server-role</Type>
+    </login>
+    <login id="21" parent="1" name="##MS_SQLResourceSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>101</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="22" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>102</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="23" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>103</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="24" parent="1" name="##MS_PolicySigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>105</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="25" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>106</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <login id="26" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <ObjectId>257</ObjectId>
+    </login>
+    <login id="27" parent="1" name="LAPTOP-5MFTJ0Q0\Admin">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>259</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="28" parent="1" name="LAPTOP-5MFTJ0Q0\Administrator">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>260</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="29" parent="1" name="NT SERVICE\SQLWriter">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>261</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="30" parent="1" name="NT SERVICE\Winmgmt">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>262</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="31" parent="1" name="NT Service\MSSQLSERVER">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>263</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="32" parent="1" name="BUILTIN\Users">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>264</ObjectId>
+      <Type>windows-group</Type>
+    </login>
+    <login id="33" parent="1" name="NT AUTHORITY\SYSTEM">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>265</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="34" parent="1" name="NT SERVICE\ReportServer">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>266</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="35" parent="1" name="NT SERVICE\SQLTELEMETRY">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>267</ObjectId>
+      <Type>windows-login</Type>
+    </login>
+    <login id="36" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <ObjectId>268</ObjectId>
+    </login>
+    <login id="37" parent="1" name="##MS_AgentSigningCertificate##">
+      <DefaultDatabase>master</DefaultDatabase>
+      <Enabled>1</Enabled>
+      <ObjectId>269</ObjectId>
+      <Type>certificate-mapped-login</Type>
+    </login>
+    <role id="38" parent="2" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="39" parent="2" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="40" parent="2" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="41" parent="2" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="42" parent="2" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="43" parent="2" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="44" parent="2" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="45" parent="2" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="46" parent="2" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="47" parent="2" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="48" parent="2" name="dbo">
+      <AuthType>windows</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+      <Type>windows-user</Type>
+    </role>
+    <role id="49" parent="2" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="50" parent="2" name="public">
+      <AuthType>none</AuthType>
+      <ObjectId>0</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="51" parent="2" name="sys">
+      <AuthType>none</AuthType>
+      <ObjectId>4</ObjectId>
+    </role>
+    <schema id="52" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="53" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="54" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="55" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="56" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="57" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="58" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="59" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="60" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="61" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="62" parent="2" name="dbo">
+      <Current>1</Current>
+      <IntrospectionTimestamp>2022-06-24.18:10:50.603</IntrospectionTimestamp>
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="63" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="64" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="65" parent="62" name="book_info">
+      <CreatedTimestamp>2022-04-20.03:08:59.387</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.363</ModifiedTimestamp>
+      <ObjectId>1182627256</ObjectId>
+    </table>
+    <table id="66" parent="62" name="book_type">
+      <CreatedTimestamp>2022-04-20.03:07:06.263</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:08:59.390</ModifiedTimestamp>
+      <ObjectId>1118627028</ObjectId>
+    </table>
+    <table id="67" parent="62" name="borrow">
+      <CreatedTimestamp>2022-04-20.03:12:25.360</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.360</ModifiedTimestamp>
+      <ObjectId>1230627427</ObjectId>
+    </table>
+    <table id="68" parent="62" name="user">
+      <CreatedTimestamp>2022-04-20.02:55:56.640</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.363</ModifiedTimestamp>
+      <ObjectId>1086626914</ObjectId>
+    </table>
+    <view id="69" parent="62" name="MinThreeMajor">
+      <CreatedTimestamp>2022-02-18.05:25:24.057</CreatedTimestamp>
+      <ModifiedTimestamp>2022-02-18.05:30:00.887</ModifiedTimestamp>
+      <ObjectId>1618104805</ObjectId>
+      <SourceTextLength>95</SourceTextLength>
+    </view>
+    <column id="70" parent="65" name="bookId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(5)</SequenceIdentity>
+    </column>
+    <column id="71" parent="65" name="bookName">
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="72" parent="65" name="bookAuthor">
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="73" parent="65" name="bookPrice">
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="74" parent="65" name="bookTypeId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="75" parent="65" name="bookDesc">
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="76" parent="65" name="isBorrowed">
+      <DataType>tinyint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <foreign-key id="77" parent="65" name="FK__book_info__bookT__4865BE2A">
+      <ColNames>bookTypeId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:08:59.390</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:08:59.390</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1214627370</ObjectId>
+      <RefColNames>bookTypeId</RefColNames>
+      <RefKeyName>PK__book_typ__44EA8352B9272539</RefKeyName>
+      <RefTableId>1118627028</RefTableId>
+      <RefTableName>book_type</RefTableName>
+    </foreign-key>
+    <index id="78" parent="65" name="PK__book_inf__8BE5A10DFF06ECF5">
+      <Clustering>1</Clustering>
+      <ColNames>bookId</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="79" parent="65" name="PK__book_inf__8BE5A10DFF06ECF5">
+      <ColNames>bookId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:08:59.390</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:08:59.390</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1198627313</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__book_inf__8BE5A10DFF06ECF5</UnderlyingIndexName>
+    </key>
+    <column id="80" parent="66" name="bookTypeId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(4)</SequenceIdentity>
+    </column>
+    <column id="81" parent="66" name="bookTypeName">
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="82" parent="66" name="bookTypeDesc">
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="83" parent="66" name="PK__book_typ__44EA8352B9272539">
+      <Clustering>1</Clustering>
+      <ColNames>bookTypeId</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="84" parent="66" name="PK__book_typ__44EA8352B9272539">
+      <ColNames>bookTypeId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:07:06.267</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:07:06.267</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1134627085</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__book_typ__44EA8352B9272539</UnderlyingIndexName>
+    </key>
+    <column id="85" parent="67" name="borrowId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(33)</SequenceIdentity>
+    </column>
+    <column id="86" parent="67" name="userId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="87" parent="67" name="bookId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="88" parent="67" name="borrowTime">
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="89" parent="67" name="returnTime">
+      <DataType>datetime|0s</DataType>
+      <DefaultConstraintName>DF__borrow__returnTi__4B422AD5</DefaultConstraintName>
+      <DefaultExpression>NULL</DefaultExpression>
+      <Position>5</Position>
+    </column>
+    <default id="90" parent="67" name="DF__borrow__returnTi__4B422AD5">
+      <ColNames>returnTime</ColNames>
+      <DefaultExpression>NULL</DefaultExpression>
+      <ModifiedTimestamp>2022-04-20.03:12:25.360</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1262627541</ObjectId>
+    </default>
+    <foreign-key id="91" parent="67" name="FK__borrow__userId__4D2A7347">
+      <ColNames>userId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:12:25.363</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.363</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1294627655</ObjectId>
+      <RefColNames>userId</RefColNames>
+      <RefKeyName>PK__user__CB9A1CFF9EA721C1</RefKeyName>
+      <RefTableId>1086626914</RefTableId>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <foreign-key id="92" parent="67" name="FK__borrow__bookId__4C364F0E">
+      <ColNames>bookId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:12:25.363</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.363</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1278627598</ObjectId>
+      <RefColNames>bookId</RefColNames>
+      <RefKeyName>PK__book_inf__8BE5A10DFF06ECF5</RefKeyName>
+      <RefTableId>1182627256</RefTableId>
+      <RefTableName>book_info</RefTableName>
+    </foreign-key>
+    <index id="93" parent="67" name="PK__borrow__73982486BFCEDD5B">
+      <Clustering>1</Clustering>
+      <ColNames>borrowId</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="94" parent="67" name="PK__borrow__73982486BFCEDD5B">
+      <ColNames>borrowId</ColNames>
+      <CreatedTimestamp>2022-04-20.03:12:25.360</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.03:12:25.360</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1246627484</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__borrow__73982486BFCEDD5B</UnderlyingIndexName>
+    </key>
+    <column id="95" parent="68" name="userId">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(9)</SequenceIdentity>
+    </column>
+    <column id="96" parent="68" name="userName">
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="97" parent="68" name="userPassword">
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="98" parent="68" name="isAdmin">
+      <DataType>tinyint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="99" parent="68" name="PK__user__CB9A1CFF9EA721C1">
+      <Clustering>1</Clustering>
+      <ColNames>userId</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="100" parent="68" name="PK__user__CB9A1CFF9EA721C1">
+      <ColNames>userId</ColNames>
+      <CreatedTimestamp>2022-04-20.02:55:56.647</CreatedTimestamp>
+      <ModifiedTimestamp>2022-04-20.02:55:56.647</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1102626971</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__user__CB9A1CFF9EA721C1</UnderlyingIndexName>
+    </key>
+    <column id="101" parent="69" name="Population">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+  </database-model>
+</dataSource>
